@@ -1,3 +1,5 @@
-const NameArg = process.argv[2] || "World";
+// Fetch name from command argument, environment, or fallback
+const nameArg =
+  process.argv[2] || process.env.USER || process.env.USERNAME || "world";
 
-console.log(`Hello, ${NameArg}`);
+console.log(`Hello, ${nameArg}`);
